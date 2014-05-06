@@ -4,9 +4,9 @@ use strict;
 use threads;
 use threads::shared;
 use FindBin;
-use lib "$FindBin::Bin/../Library";
+use lib "$FindBin::Bin/../Lib";
 use Configuration;
-use Alignment;
+use Alignment::Alignment;
 use hdpTools;
 package TopHatTools;
 

@@ -5,9 +5,9 @@ use strict;
 use warnings;
 use FindBin;
 use lib "$FindBin::Bin/";
-use AlignmentFeature;
-use AlignmentReference;
-use Read;
+use Alignment::AlignmentFeature;
+use Alignment::AlignmentReference;
+use Alignment::Read;
 
 sub new {
 	my $class=shift;
