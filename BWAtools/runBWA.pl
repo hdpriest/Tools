@@ -2,7 +2,7 @@
 use warnings;
 use strict;
 use FindBin;
-use lib "$FindBin::Bin/../Library";
+use lib "$FindBin::Bin/../Lib";
 use Alignment::BWAtools;
 
 my $config=$ARGV[0];
