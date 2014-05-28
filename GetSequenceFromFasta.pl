@@ -3,14 +3,14 @@ use warnings;
 use strict;
 use FindBin;
 use lib "$FindBin::Bin/Lib";
-use Tools;
+use hdpTools;
 
 die "usage: perl $0 <fasta file> <id>\n\n";
 
 my $file=$ARGV[0];
 my $id=$ARGV[1];
 
-my %Fasta=%{Tools->LoadFile($file)};
+my %Fasta=%{hdpTools->LoadFile($file)};
 if(defined($Fasta{$id})){
 	print ">".$id."\n".$Fasta{$id}."\n";
 }else{
